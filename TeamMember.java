@@ -17,6 +17,9 @@ public class TeamMember
         this.name = name;
     }
 
+    /**
+     * 이름 반환
+     */
     public String getName(){
         return this.name;        
     }
