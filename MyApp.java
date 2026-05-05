@@ -25,7 +25,7 @@ public class MyApp
         int dan = scanner.nextInt();
 
         if(dan >= 2 && dan <=9){
-            switch(targetName.toLowerCase()){   // 대소문자 구분 없는 빕교를 위해 소문자로 변환
+            switch(targetName.toLowerCase()){  // 대소문자 구분 없는 비교를 위해 소문자로 변환
                 case "jenna":
                     Jenna.Gugudan(dan);
                     break;
