@@ -2,12 +2,12 @@
 /**
  * TeamMember 클래스의 설명을 작성하세요.
  *
- * @author (작성자 이름)
- * @version (버전 번호 또는 작성한 날짜)
+ * @author (2025320070 복창희, 2025320038 윤세연)
+ * @version (20260505)
  */
 public class TeamMember
 {
-    // 인스턴스 변수 - 다음의 예제를 사용자에 맞게 변경하세요.
+    // 인스턴스 변수
     private String name;
 
     /**
@@ -22,15 +22,19 @@ public class TeamMember
     }
 
     /**
-     * 메소드 예제 - 사용자에 맞게 주석을 바꾸십시오.
-     *
-     * @param  y  메소드의 샘플 파라미터
-     * @return    x 와 y의 합
+     * 구구단 매서드
      */
-    public int sampleMethod(int y)
+    public void Gugudan(int dan)
     {
-        // 여기에 코드를 작성하세요
-        return y;
+        System.out.println(this.name + "에게, " + dan + "단을 답해주세요~");
+        
+        for(int i = 1; i <= 9; i++){
+            System.out.print(dan + "x" + i + "=" + (dan * i));
+            if(i < 9){
+                System.out.print(" ");
+            }
+        }
+        System.out.println();
     }
 
 }
