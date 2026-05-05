@@ -2,7 +2,7 @@
 /**
  * TeamMember 클래스의 설명을 작성하세요.
  *
- * @author (2025320070 복창희, 2025320038 윤세연)1
+ * @author (2025320070 복창희, 2025320038 윤세연)
  * @version (20260505)
  */
 public class TeamMember
