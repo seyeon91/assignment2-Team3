@@ -13,7 +13,7 @@ class Student {
     int    year;
     int    semester;
     int[]  scores;          // 과목별 점수 배열 (-1 = 미입력)
- 
+
     // 생성자
     Student(String name, String studentId, int year, int semester) {
         this.name      = name;
@@ -23,7 +23,7 @@ class Student {
         this.scores    = new int[6];
         for (int i = 0; i < 6; i++) this.scores[i] = -1;
     }
- 
+
     // 점수 → 등급 변환
     String getGrade(int score) {
         if      (score >= 95) return "A+";
@@ -36,7 +36,7 @@ class Student {
         else if (score >= 60) return "D";
         else                  return "F ";
     }
- 
+
     // 등급 → 평점 변환
     double getGPA(String grade) {
         switch (grade.trim()) {
@@ -51,7 +51,7 @@ class Student {
             default:   return 0.0;
         }
     }
- 
+
     // 평점 평균 계산
     double calcAvgGPA(int[] credits) {
         double total     = 0;
@@ -64,10 +64,10 @@ class Student {
         }
         return (creditSum > 0) ? total / creditSum : 0.0;
     }
- 
+
     // 학생 정보 출력
     void printInfo() {
         System.out.println("이름: " + name + "  학번: " + studentId
-                         + "  " + year + "학년  " + semester + "학기");
+            + "  " + year + "학년  " + semester + "학기");
     }
 }
